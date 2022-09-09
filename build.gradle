@@ -29,7 +29,7 @@ tasks {
 
 publishing {
     publications {
-        orm(MavenPublication) {
+        env(MavenPublication) {
             from components.java
         }
     }
