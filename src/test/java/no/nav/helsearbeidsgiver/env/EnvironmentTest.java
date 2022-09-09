@@ -1,4 +1,4 @@
-package nav.helsearbeidsgiver.env;
+package no.nav.helsearbeidsgiver.env;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

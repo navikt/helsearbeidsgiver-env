@@ -1,4 +1,4 @@
-package nav.helsearbeidsgiver.env;
+package no.nav.helsearbeidsgiver.env;
 
 import java.lang.reflect.Field;
 

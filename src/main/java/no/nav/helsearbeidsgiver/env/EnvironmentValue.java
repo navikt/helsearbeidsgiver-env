@@ -1,4 +1,4 @@
-package nav.helsearbeidsgiver.env;
+package no.nav.helsearbeidsgiver.env;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
