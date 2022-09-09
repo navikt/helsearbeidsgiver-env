@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'nav.helsearbeidsgiver'
+group = 'no.nav.helsearbeidsgiver'
 version = '0.0.1'
 description = 'helsearbeidsgiver-env'
 
