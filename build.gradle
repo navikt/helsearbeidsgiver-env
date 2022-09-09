@@ -1,0 +1,45 @@
+
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'nav.helsearbeidsgiver'
+version = '0.0.1'
+description = 'helsearbeidsgiver-env'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    withJavadocJar()
+    withSourcesJar()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+}
+
+tasks {
+    test {
+        useJUnitPlatform()
+    }
+}
+
+publishing {
+    publications {
+        orm(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://maven.pkg.github.com/nav/${rootProject.name}")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
