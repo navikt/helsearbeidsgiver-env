@@ -6,15 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class EnvironmentTest {
 
     @Test
-    public void shouldRead() {
-        DemoSettings object = Environment.read(DemoSettings.class);
-        assertNotNull(object.javaHome);
-    }
-
-    @Test
-    public void shouldInject() {
+    public void readConstructor() {
         DemoSettings object = new DemoSettings();
-        Environment.inject(object);
         assertNotNull(object.javaHome);
     }
 
