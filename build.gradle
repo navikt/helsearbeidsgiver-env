@@ -28,7 +28,7 @@ tasks {
 
 publishing {
     publications {
-        helsearbeidsgiver-env(MavenPublication) {
+        helsearbeidsgiverenv(MavenPublication) {
             from components.java
         }
     }

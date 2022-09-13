@@ -11,4 +11,11 @@ class EnvironmentTest {
         assertNotNull(object.javaHome);
     }
 
+    @Test
+    public void shouldInject() {
+        DemoSettings object = new DemoSettings();
+        Environment.inject(object);
+        assertNotNull(object.javaHome);
+    }
+
 }
